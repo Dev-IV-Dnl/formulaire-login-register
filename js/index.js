@@ -13,6 +13,7 @@ let cercle = document.querySelector(".cercle");
 let body = document.body;
 
 
+//Code animation formulaire :
 btnRegister.addEventListener("click",()=>{
     console.log('Je clique sur le couton Register !');
     ovale.style.left = "50%";
@@ -31,6 +32,8 @@ btnLogin.addEventListener("click", () => {
     // lr[i].style.transform = 'translate(0px, ' + (i * 600) + 'px)';
 })
 
+
+// Code animation BTN J/N :
 jn.addEventListener("click", () => {
     if(body.classList.contains("light")) {
         body.classList.remove("light");
