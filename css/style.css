@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-    color: var(--col1);
+    color: var(--col2);
 }
 
 .container {
@@ -35,11 +35,12 @@ h1 {
     top: 100px;
     width: 270px;
     height: 300px;
-    box-shadow: 3px 3px 5px var(--col2);
+    /* box-shadow: 3px 3px 5px var(--col2); */
+    box-shadow: 0 0 0.5em var(--col2);
     overflow: hidden;
-    border-radius: 20px;
     background-color: transparent;
     user-select: none;
+    border-radius: 10px;
 }
 
 .divLR {
@@ -81,7 +82,7 @@ h1 {
     width: 160px;
     height: 30px;
     border: solid 2px var(--col2);
-    box-shadow: 2px 2px 5px;
+    box-shadow: 0 0 0.3em var(--col2);
     border-radius: 15px;
 }
 .btnLogIn, .btnRegister {
@@ -147,7 +148,7 @@ input[type="radio"].demo1 + label {
   font-size: 0.9rem;
   line-height: 1px;
   border-radius: 0.2rem;
-  color: #fff;
+  color: var(--col3);
   background-color: #6c757d;
   border: 2px solid transparent;
   transition: all 0.2s ease-in-out;
@@ -225,7 +226,7 @@ input[type="radio"].demo2.demono:checked + label {
     align-items: center;
     background-color: grey;
     cursor: pointer;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0 0 0.2em var(--col2);
 }
 .cercle {
     position: absolute;
