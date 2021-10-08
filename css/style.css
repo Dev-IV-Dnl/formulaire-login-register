@@ -19,10 +19,11 @@ h1 {
     top: 100px;
     width: 270px;
     height: 300px;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 3px 3px 5px var(--col2);
     overflow: hidden;
     border-radius: 20px;
     background-color: transparent;
+    user-select: none;
 }
 
 .divLR {
@@ -144,7 +145,7 @@ input[type="radio"].demo2.demoyes:hover + label {
 }
 input[type="radio"].demo2.demoyes:checked + label {
   background-color: var(--col2);
-  border-color: #28a745;
+  border-color: darkgreen;
 }
 input[type="radio"].demo2.demono:hover + label {
   /* background-color: #c82333;
@@ -153,7 +154,7 @@ input[type="radio"].demo2.demono:hover + label {
 }
 input[type="radio"].demo2.demono:checked + label {
   background-color: var(--col2);
-  border-color: #dc3545;
+  border-color: darkred;
 }
 
 
@@ -181,7 +182,7 @@ input[type="radio"].demo1.demoyes:hover + label {
 }
 input[type="radio"].demo1.demoyes:checked + label {
   background-color: var(--col2);
-  border-color: #28a745;
+  border-color: darkgreen;
 }
 input[type="radio"].demo1.demono:hover + label {
   /* background-color: #c82333;
@@ -190,5 +191,5 @@ input[type="radio"].demo1.demono:hover + label {
 }
 input[type="radio"].demo1.demono:checked + label {
   background-color: var(--col2);
-  border-color: #dc3545;
+  border-color: darkred;
 }
