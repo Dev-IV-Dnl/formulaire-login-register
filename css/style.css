@@ -2,7 +2,7 @@
     --col1: darkred;
     --col2:#333;
     --col3:#F1F1F1;
-    --col4:grey;
+    --col4:rgb(192, 189, 189);
 }
 
 body {
@@ -17,8 +17,8 @@ h1 {
     position: relative;
     margin: 0 auto;
     top: 100px;
-    width: 400px;
-    height: 600px;
+    width: 270px;
+    height: 300px;
     box-shadow: 5px 5px 10px;
     overflow: hidden;
     border-radius: 20px;
@@ -33,26 +33,26 @@ h1 {
 
 .divLogIn, .divRegister {
     position: relative;
-    width: 400px;
-    height: 600px;
+    width: 270px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    font-family: fantasy;
+    color: var(--col2);
+    font-size: 14px;
 }
 
 .divLogIn {
     background-color: var(--col3);
-    color: var(--col3);
 }
 
 .divRegister {
     background-color: var(--col3);
-    color: var(--col3);
-
 }
 
 .divBtn {
-    top: 20px;
+    top: 5px;
     position: absolute;
     width: 100%;
     display: flex;
@@ -68,7 +68,6 @@ h1 {
     border-radius: 15px;
 }
 .btnLogIn, .btnRegister {
-    color: var(--col3);
     border: none;
     position: absolute;
     width: 80px;
@@ -81,9 +80,11 @@ h1 {
     transition: linear 0.2s;
 }
 .btnLogIn {
+    color: var(--col3);
     left: 0;
 }
 .btnRegister {
+    color: var(--col2);
     right: 0;
 }
 .ovale {
@@ -97,9 +98,97 @@ h1 {
 }
 
 .monInput {
-    width: 250px;
+    width: 90%;
     height: 30px;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
+    color: var(--col2);
+    font-family: fantasy;
+    font-size: 18px;
+}
+::placeholder {
+    color: var(--col4);
+    font-family: fantasy;
+}
+
+.divCheck {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CSS Checkbox Login*/
+
+input[type="radio"].demo2 {
+  display: none;
+}
+input[type="radio"].demo2 + label {
+  padding: 0.5rem 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1px;
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: #6c757d;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+input[type="radio"].demo2.demoyes:hover + label {
+  /* background-color: #218838;
+  border-color: #1e7e34; */
+  cursor: pointer;
+}
+input[type="radio"].demo2.demoyes:checked + label {
+  background-color: var(--col2);
+  border-color: #28a745;
+}
+input[type="radio"].demo2.demono:hover + label {
+  /* background-color: #c82333;
+  border-color: #bd2130; */
+  cursor: pointer;
+}
+input[type="radio"].demo2.demono:checked + label {
+  background-color: var(--col2);
+  border-color: #dc3545;
+}
+
+
+/*CSS checkbox Register*/
+
+input[type="radio"].demo1 {
+  display: none;
+}
+input[type="radio"].demo1 + label {
+  padding: 0.5rem 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1px;
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: #6c757d;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+input[type="radio"].demo1.demoyes:hover + label {
+  /* background-color: #218838;
+  border-color: #1e7e34; */
+  cursor: pointer;
+}
+input[type="radio"].demo1.demoyes:checked + label {
+  background-color: var(--col2);
+  border-color: #28a745;
+}
+input[type="radio"].demo1.demono:hover + label {
+  /* background-color: #c82333;
+  border-color: #bd2130; */
+  cursor: pointer;
+}
+input[type="radio"].demo1.demono:checked + label {
+  background-color: var(--col2);
+  border-color: #dc3545;
 }

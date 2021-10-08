@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/index.js" defer></script>
-    <title>Formulaire Login Register</title>
+    <title>Mon superbe Formulaire Login Register</title>
 </head>
 <body>
-    <h1>Formulaire Login Register</h1>
+    <h1>Mon superbe formulaire Login Register</h1>
 
     <div class="container">
         <div class="divBtn">
@@ -24,8 +24,13 @@
                 <form class="logInForm">
                     <input class="monInput" type="text" placeholder="Login / Email..."><br>
                     <input class="monInput" type="password" placeholder="Password..."><br>
-                    <input class="check" type="checkbox">
-                    <label for="">Remember Password</label>
+                    <div class="divCheck">
+                        <label for="">Remember Password : </label>
+                        <input type="radio" name="demo2" class="demo2 demoyes" id="demo2-a" checked>
+                        <label for="demo2-a">Oui</label>
+                        <input type="radio" name="demo2" class="demo2 demono" id="demo2-b">
+                        <label for="demo2-b">Non</label>
+                    </div>
                 </form>
             </div>
             <div class="divRegister">
@@ -34,8 +39,13 @@
                     <input class="monInput" type="text" placeholder="Email..."><br>
                     <input class="monInput" type="password" placeholder="Password..."><br>
                     <input class="monInput" type="password" placeholder="Confirm password..."><br>
-                    <input class="check" type="checkbox">
-                    <label class="label" for="">Remember Password</label>
+                    <div class="divCheck">
+                        <label for="">Remember Password : </label>
+                        <input type="radio" name="demo1" class="demo1 demoyes" id="demo1-a" checked>
+                        <label for="demo1-a">Oui</label>
+                        <input type="radio" name="demo1" class="demo1 demono" id="demo1-b">
+                        <label for="demo1-b">Non</label>
+                    </div>
                 </form>
             </div>
         </div>
