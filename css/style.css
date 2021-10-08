@@ -5,8 +5,24 @@
     --col4:rgb(192, 189, 189);
 }
 
+.dark {
+    --col1: darkred;
+    --col2:#F1F1F1;
+    --col3:#333;
+    --col4:rgb(192, 189, 189);
+}
+
+.light {
+    --col1: darkred;
+    --col2:#333;
+    --col3:#F1F1F1;
+    --col4:rgb(192, 189, 189);
+}
+
 body {
     text-align: center;
+    background-color: var(--col3);
+    transition: linear 0.2s;
 }
 
 h1 {
@@ -121,44 +137,7 @@ h1 {
 }
 
 
-/* CSS Checkbox Login*/
-
-input[type="radio"].demo2 {
-  display: none;
-}
-input[type="radio"].demo2 + label {
-  padding: 0.5rem 0.4rem;
-  font-size: 0.9rem;
-  line-height: 1px;
-  border-radius: 0.2rem;
-  color: #fff;
-  background-color: #6c757d;
-  border: 2px solid transparent;
-  transition: all 0.2s ease-in-out;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-input[type="radio"].demo2.demoyes:hover + label {
-  /* background-color: #218838;
-  border-color: #1e7e34; */
-  cursor: pointer;
-}
-input[type="radio"].demo2.demoyes:checked + label {
-  background-color: var(--col2);
-  border-color: darkgreen;
-}
-input[type="radio"].demo2.demono:hover + label {
-  /* background-color: #c82333;
-  border-color: #bd2130; */
-  cursor: pointer;
-}
-input[type="radio"].demo2.demono:checked + label {
-  background-color: var(--col2);
-  border-color: darkred;
-}
-
-
-/*CSS checkbox Register*/
+/* CSS checkbox Login */
 
 input[type="radio"].demo1 {
   display: none;
@@ -181,7 +160,7 @@ input[type="radio"].demo1.demoyes:hover + label {
   cursor: pointer;
 }
 input[type="radio"].demo1.demoyes:checked + label {
-  background-color: var(--col2);
+  background-color: darkgreen;
   border-color: darkgreen;
 }
 input[type="radio"].demo1.demono:hover + label {
@@ -190,6 +169,71 @@ input[type="radio"].demo1.demono:hover + label {
   cursor: pointer;
 }
 input[type="radio"].demo1.demono:checked + label {
-  background-color: var(--col2);
+  background-color: darkred;
   border-color: darkred;
+}
+
+
+
+/* CSS Checkbox Register */
+
+input[type="radio"].demo2 {
+  display: none;
+}
+input[type="radio"].demo2 + label {
+  padding: 0.5rem 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1px;
+  border-radius: 0.2rem;
+  color: var(--col3);
+  background-color: #6c757d;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+input[type="radio"].demo2.demoyes:hover + label {
+  /* background-color: #218838;
+  border-color: #1e7e34; */
+  cursor: pointer;
+}
+input[type="radio"].demo2.demoyes:checked + label {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}
+input[type="radio"].demo2.demono:hover + label {
+  /* background-color: #c82333;
+  border-color: #bd2130; */
+  cursor: pointer;
+}
+input[type="radio"].demo2.demono:checked + label {
+  background-color: darkred;
+  border-color: darkred;
+}
+
+
+/* Boutton J/N*/
+
+.btnJN {
+    margin: 0 auto;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px;
+}
+.cercle {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: var(--col2);
+    border-radius: 20px;
+    top: 1px;
+    left: 2px;
+    transition: linear 0.2s;
 }
